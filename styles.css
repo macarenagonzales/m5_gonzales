@@ -1,0 +1,54 @@
+*{
+    font-family: 'Oswald', 'Poppins', sans-serif;
+}
+
+#board, .boardInfo{
+    max-width: 500px;
+}
+
+#board{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+#startButton, .boardInfo{
+    font-size: 25px;
+}
+
+#gameOver{
+    display: none;
+}
+
+.boardInfo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#startButton{
+    background-color: #f35a59;
+    border: none;
+    color: white;
+}
+
+#scoreBoard{
+    display: inline-flex;
+}
+
+.square{
+    aspect-ratio: 1;
+}
+
+.emptySquare{
+    background-color:#6d71b5;;
+}
+
+.snakeSquare{
+    background-color:#1CE831;
+    
+}
+
+.foodSquare{
+    background-color: #E8801C ;
+    border: 1px solid #000;
+}
